@@ -1,0 +1,175 @@
+body{
+    background-color: #e9ecef;
+}
+/* navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+}
+
+.navbar-brand{
+    font-family: viga;
+    font-size: 32px;
+    
+}
+
+.nav-link{
+    margin-right: 30px;
+
+}
+
+
+/* utility */
+.tombol{
+    border-radius: 35px;
+    height: fit-content;
+    text-transform: uppercase;
+}
+
+
+
+/* info panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    /* margin-top: -60px; */
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+.info-panel h3{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: -2px;
+    font-weight: lighter;
+}
+.info-panel h3 span{
+    font-family: viga;  
+}
+
+.info-panel h3::after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid #acacac;
+    width: 100%;
+    /* margin:auto;    */
+    margin-top: 10px;
+}
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* margin-top: ; */
+}
+
+.info-panel p{
+    font-size: 14px;
+    color: gray;
+}
+
+
+/* testi */
+.testi{
+    margin-top: 20px;
+    /* margin-bottom: 15px; */
+}
+
+.testi h5{
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.testi figure img{
+    width: 0px;
+    /* margin-top: 30px; */
+    margin: 30px 0px 30px 0px;
+    /* height: 120px; */
+    /* opacity: 0.6; */
+    
+}
+
+.testi figure img.utama{
+    width: 120px;
+    opacity: 1;
+    margin-top: 12px;
+    box-shadow: 2px 2px #acacac;
+}
+
+.testi figure img.kedua{
+    width: 50px;
+    margin: 85px 18px 0px -40px;
+    box-shadow: 1px 1px #acacac;
+    position: absolute;
+}
+.testi h5{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    margin-top: -30px;
+}
+
+.testi p{
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -18px !important;
+}
+
+.testi{
+    text-align: center;
+}
+
+.footer{
+    margin-top: 50px;
+    color: gray;
+    font-weight: lighter;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .navbar-brand{
+        font-family: viga;
+        font-size: 32px;
+        /* color:white !important; */
+        /* text-shadow: 1px 1px 1px grey; */
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        /* color: rgba(255, 255, 255, 0.747) !important; */
+        /* text-shadow: 1px 1px 1px grey; */
+
+    }
+
+    .nav-link span::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid#0B63DC;
+        width: 50%;
+        margin:auto;  
+    }
+  
+    .nav-link span:hover::after{
+        width: 75%;  
+    }
+    
+
+  /* testi */
+  .testi h5{
+    font-size: 22px;
+}
+
+.testi p{
+    font-size: 18px;
+
+}
+  .footer{
+    margin-top: 75px;
+    
+}
+}
